@@ -1,0 +1,518 @@
+html {
+    /* sets the background color of the web page*/
+
+    background: linear-gradient(#d3d08a, #cd7f99, #3e0cbd) no-repeat fixed;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: #c5cdd4; /* sets the background color of the body element */
+    margin: 0 auto; /* value 0 represents no spacing top and bottom,
+                       auto spacing apply equally left and right*/
+    color: rgb(49,46,46);
+    text-align: center;
+    border: 1px solid lightcoral;
+}
+
+aside h2, .mainwrap h2{
+    background: #077af8;
+}
+
+/* -------- HEADER --------- */
+
+header, footer {
+    /*background: cadetblue; !* sets the background color of the header and footer *!*/
+    background-image: linear-gradient(#6f1fb8, #077af8);
+    color: white; /* color of the text against the background*/
+    padding: 20px 10px; /* add spacing to top/bottom left/right of header/footer */
+    border: 1px solid #077af8;
+    filter: drop-shadow(0 0 0.25rem whitesmoke);
+}
+
+
+header { /*makes header rounded at the bottom */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+input[type="search"] {
+width: 100%;
+}
+
+/* research on css resets: https://meyerweb.com/eric/tools/css/reset/ */
+ul {
+    margin: 0; /* removing the browser default margin */
+    padding: 0; /* removing the browser default padding */
+}
+
+/* note: margin and padding can only be added to left and right on inline elements  */
+/* note: block level elements take up the full available width, with no margin/padding restriction  */
+/* to replicate inline behavior, set element to inline block */
+
+li {
+    list-style: none; /* removes bullets */
+    line-height: 30px;
+    padding: 3px 3px;
+}
+
+a {
+    text-decoration: none; /* removes underline from links */
+    color: inherit; /* inherit keyword specifies that this property should inherit value from parent element */
+}
+
+a:hover { /* psuedo class hover */
+    color: #b83d5d;
+}
+
+header li { /* applies to header list in header only */
+    display: inline;
+}
+
+header h1, nav { /* allows h1 to sit next to nav */
+    display: inline-block; /* allows for manipulating top and bottom padding/margins */
+}
+
+header h1 { /* Art Store heading */
+    max-width: 50vh;
+    filter: drop-shadow(5px 5px .5em white);
+    margin-right: 15px; /* gives space to the right side of header h1 text */
+}
+
+.center {
+    display: inline-block;
+    text-align: center;
+    margin: 1em 10em;
+}
+
+/* -------- END HEADER --------- */
+
+/* -------- SIDEBAR --------- */
+
+aside {
+    background: #dbe4ea; /* sidebar color */
+    margin: 30px;
+    padding: 0 10px 10px 10px; /* gives space to the aside section from the edge of the document */
+    border-radius:10px;
+    border: 1px solid #077af8;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+aside h2,h3 { /* aligns text in sidebar */
+    text-align: center;
+}
+
+aside h2 { /* Shop by heading */
+    color: white;
+    margin-top: 0; /* no margin at top of header in sidebar */
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+aside h3 { /* category and price headers */
+    color: #567190;
+}
+
+hr {
+    border: 1px solid grey;
+}
+
+aside li { /* aligns text in sidebar */
+    text-align: center;
+    background:#a9bacc;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+aside li:hover { /* sidebar highlights */
+    background: #96d244;
+    color: white;
+}
+
+/* -------- END SIDEBAR--------- */
+
+/* -------- MAIN -------- */
+
+
+.main-wrap, .section-wrap { /* wraps the main content in a rounded border*/
+    background: #dbe4ea;
+
+    box-sizing: border-box;
+    margin:30px 10px;
+    /* no padding on top of main wrap */
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #077af8;
+   overflow:hidden;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+
+ main .scroll { /*  now content in the main box will scroll */
+    height: 100%;
+    overflow: scroll;
+     padding-bottom: 10px;
+}
+
+body .main-wrap h2, .section-wrap h2 { /* All items header */
+    color: white;
+    text-align: center;
+    margin-top: 0; /* allows the header to sit flush with the top of the main section */
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+body hr {
+    margin-right: 10px;
+}
+
+body p{
+    margin-right: 10px;
+}
+
+.product { /* the individual boxes in the body */
+    background:#f7fbfc; /* background of product box */
+    margin: 5px; /* margin is spacing applied outside the element */
+    padding: 10px; /* padding is spacing applied inside the element */
+    text-align: center; /* centers text for each product */
+    box-sizing: border-box; /* makes sure width declared is the TOTAL width */
+    border-radius: 10px; /* rounds the box */
+    border: 1px solid white;
+    filter: drop-shadow(0 0 0.75rem lightgrey);
+}
+
+.product:hover {
+    background: white; /* changes product background on hover */
+    filter: drop-shadow(0 0 0.95rem whitesmoke); /* gives product a shadow */
+}
+
+.product img { /* product images were too big to fit inside container */
+    max-width: 100%; /* image stretches no further than container */
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.button {
+    padding: 10px;
+    display: inline-block;
+}
+
+.button:last-of-type {
+    background: #4b7db4; /* adds a blue box around Add to Cart */
+    color: white;
+}
+
+.button:hover {
+    background: #247bdb;
+    color: white;
+}
+/* -------- END MAIN--------- */
+
+
+
+/* ------------------------- My Portfolio pge --------------------------*/
+
+.portfolio h3 {
+    background: #f7fbfc ;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #4b7db4;
+    border-radius: 10px;
+}
+.portfolio {
+    height: 50vh;
+    overflow: scroll;
+    display: inline-block;
+    margin: 0 3em;
+}
+
+.portfolio p {
+    height:15vh;
+}
+
+.portfolio img{
+    width: 100%;
+    min-width: 50%;
+    margin: 1em 0;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 8px slategray );
+}
+
+
+/*-------------------------Product detail page-------------------------*/
+
+main h2 {
+    background: #247bdb;
+    text-align: center;
+    color:white;
+    border-radius: 10px;
+}
+
+.product-details h2{
+    background: lightgrey;
+    color:grey;
+    display: inline-block;
+    margin: 10px;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.product-details {
+    display: inline-block; /* allows us to manipulate height and width margin */
+    background: whitesmoke;
+    width: 100%;
+    box-sizing: border-box; /* makes sure width declared is the TOTAL width */
+    border: 1px solid grey;
+    text-align: center; /* centers text for each product */
+}
+
+.product-details img { /* gives image a white border and framed look */
+    max-width:40vh;
+    margin: 20px 20px;
+    float: left;
+    border: 10px solid white;
+    filter: drop-shadow(5px 5px 8px grey );
+    outline: 9px ridge #996515; /* gives the border a frame-like look */
+}
+
+/*               Table                  */
+table {
+    background: white;
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+}
+
+caption {
+    background: #9a65a1;
+    color:white;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted;
+    padding: 10px;
+}
+
+th,td {
+    padding: 10px; /* Gives spacing to the columns in the table */
+}
+
+tr:hover {
+    background: #f5f5f5; /* Changes the background color of the table when hovered over */
+}
+
+/*  -------------------------Contact page-------------------------*/
+
+form {
+    padding: 10px;
+    margin: 10px 0; /* add spacing on top and bottom of form, 0 on L/R */
+}
+
+.scroll {
+    background:#f7fbfc;
+    border-radius: 10px;
+    margin:5px;
+}
+
+form > div { /* targets all div elements that are a direct child of form */
+    margin: 10px 0;
+}
+
+.inline label {
+    display: inline-block; /* cant set width of inline elements, change to inline block */
+    width: 100px; /* width of label pushes inputs into alignment */
+}
+
+.inline label[for=subject] {
+    width: 96px;
+}
+
+input[type="text"], input[type="email"], textarea { /* targets specific input types and text area */
+    padding: 10px;
+    width: 90%;
+}
+
+iframe {
+    max-width: 40vh;
+    margin: 10px;
+}
+/*-------------------------about me page-------------------------*/
+
+
+.about-header {
+    width: 63%;
+    float:right;
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 3px grey );
+}
+
+.about-me img {
+    margin: 0 0 0 5px;
+    width: 35%;
+    height: auto;
+    outline: 5px solid #f7fbfc;
+    border-radius: 30px;
+    display: inline-block;
+    float:left;
+    filter: drop-shadow(0px 0px 5px blue );
+}
+
+.about-p {
+    background: whitesmoke;
+    color: slategray;
+    max-width: 55%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline;
+    float:right;
+    filter: drop-shadow(0px 0px 3px grey );
+}
+
+.about-sidebar {
+    display:block;
+    margin:  10px 3em 0 0;
+}
+
+.about-sidebar li {
+    width: 100%;}
+
+.video-box {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2em;
+    padding:0;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 3px lightblue );
+}
+
+
+/*-------------------------about me end-------------------------*/
+
+
+/*-------------------------my music page-------------------------*/
+
+.iframe-wrap {
+    margin-left: 5vw;
+    margin-right: 10vw;
+}
+
+/*-------------------------my music page-------------------------*/
+
+/* media queries allow changes to the layout based on
+ the users device size, orientation or resolution etc. */
+
+/* -------------------------MEDIA QUERIES------------------------- */
+
+/* When the viewport is at least 800px wide */
+@media (min-width: 700px) {
+    input[type="search"]{
+        width: 50%; /* lets links and search remain on same line */
+        margin-left: 1em;  /* give space between links and search */
+    }
+
+    .product {
+        display: inline-block; /* allows us to manipulate height and width margin */
+        width: 30%; /* allows more products to fit on screen */
+    }
+    video {
+        display: block;
+        width: 75%;
+        height: 12vh;
+        margin: 1em auto;
+        border-radius: 10px;
+    }
+
+}
+/* ----------------------------1000 px------------------------------------ */
+/* When the viewport is at least 1000px wide */
+@media (min-width: 1000px) {
+
+    input[type="search"]{
+        width: 30%; /* lets links and search remain on same line */
+        margin-left: 2em;  /* give space between links and search */
+    }
+
+    body {
+        text-align: left; /* content go back to left side for readability */
+    }
+
+    header h1 {
+        width: 20vw; /* Makes the Header title take up less of the width and push everything to the right*/
+    }
+
+    main {
+        /* target / context = result */
+        /* og body width was 1000 pixels */
+        /* 680 / 1000 = 0.68 */
+        width: 68%;
+        height: 60em;
+        display: inline-block;
+        padding: 10px 0 10px 10px; /* added to align the header in main and aside */
+    }
+
+
+    .product img:hover { /* makes product images pop out when hovered over */
+        transform: scale(1.3);
+        transition: transform .2s; /* Animation */
+    }
+
+    aside {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top; /* can be used to align inline items or items inside table cells */
+    }
+
+    .iframe-wrap {
+        margin-left: 12vw;
+        filter: drop-shadow(0 0 0.5rem black);
+    }
+
+    video {
+        display: inline;
+        width: 15vw;
+        height: 12vh;
+        margin: 0 10px;
+        border-radius: 10px;
+
+    }
+
+
+    .portfolio img {
+        display: inline-block;
+        margin-right: auto;
+        margin-left: 0;
+        max-width:50%;
+    }
+
+    .portfolio p {
+        vertical-align: top;
+        overflow: scroll;
+        display: inline-block;
+        width:40%;
+        height:15vh;
+        margin-left:1em;
+        margin-right:0;
+    }
+
+    .paragraph {
+        padding: 1em;
+    }
+
+    .portfolio h3{
+
+        display: block;
+        margin: 10px;
+    }
+
+
+
+}/* end media query */
+
+/* -------------------------------1200 px------------------------------------ */
+/* When the viewport is at least 1200px wide */
+@media (min-width: 1200px) {
+    body{
+        max-width: 80vw; /* sets the body size to be 80 percent of viewport width*/
+    }
+
+}/* end media query */
