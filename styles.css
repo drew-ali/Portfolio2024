@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f7; 
+}
+
+header {
+    background-color: #fff; /* White header background */
+    padding: 20px;
+    border-bottom: 1px solid #e1e4e8; /* Subtle border for separation */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0071e3; 
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+header img.avatar {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow for card-like effect */
+    border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.bioText {
+    border: solid 1px;
+    border-radius: 30px;
+    padding: 30px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* Headshot Styling */
+img.avatar {
+    border-radius: 50%;
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+    margin: 0 auto; 
+    display: block;
+}
+
+.projectThumb {
+    display: block;
+    border: solid 1px;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #0071e3; /* Blue border on focus */
+    outline: none;
+}
+
+button {
+    background-color: #0071e3; /* Blue button background */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #e1e4e8; /* Subtle border for separation */
+    background-color: #fff; /* White footer background */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    img.avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    form input[type="text"], form input[type="email"], form textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
